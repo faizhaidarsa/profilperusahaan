@@ -29,6 +29,10 @@ export class Header extends Component {
           isOpen: !this.state.isOpen
         });
       }
+
+      onClickNav = ()=>{
+        this.setState({isOpen:false})
+      }
     
     render() {
         return (
@@ -41,19 +45,19 @@ export class Header extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/" className='nav-link text-white'>Home</NavLink>
+                <NavLink onClick={this.onClickNav} to="/" className='nav-link text-white'>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about" className='nav-link text-white'>About</NavLink>
+                <NavLink onClick={this.onClickNav} to="/about" className='nav-link text-white'>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/course" className='nav-link text-white'>Course</NavLink>
+                <NavLink onClick={this.onClickNav} to="/course" className='nav-link text-white'>Course</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/client" className='nav-link text-white'>Client</NavLink>
+                <NavLink onClick={this.onClickNav} to="/client" className='nav-link text-white'>Client</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/contact" className='nav-link text-white'>Contact</NavLink>
+                <NavLink onClick={this.onClickNav} to="/contact" className='nav-link text-white'>Contact</NavLink>
               </NavItem>
               {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

@@ -39,12 +39,12 @@ export class About extends Component {
         <CardBody>
           <CardTitle className='h2 text-center'>Experiences</CardTitle>
           
-          <CardText>
+          
               <ol>
                   <li>NDT For Boeing-747, A330, A320, B737 series, ATR etc.</li>
                   <li>NDT For Fabrication, Refinery, Power Plant, Pipe etc.</li>
               </ol>
-          </CardText>
+          
           
         </CardBody>
       </Card>

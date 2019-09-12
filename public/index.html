@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <script>
+          // Initialize and add the map
+          function initMap() {
+            // The location of Uluru
+            var uluru = {lat: -6.175567, lng: 106.827107};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 10, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFRjSorSuMVLTweQn_XtcG5IttV1SoUtg&callback=initMap">
+              </script>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,3 +56,5 @@
     -->
   </body>
 </html>
+
+  

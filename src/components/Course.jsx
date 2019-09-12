@@ -93,7 +93,7 @@ export class Course extends Component {
         return (
             <div className='container'>
                 <div style={{height:this.state.height}}></div>
-                <h1 className='display-4 text-center'><strong>Course</strong></h1>
+                <h1 className='display-4 text-center mb-3'><strong>Course</strong></h1>
                 <Nav tabs>
           <NavItem>
             <NavLink
