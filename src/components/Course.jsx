@@ -59,7 +59,7 @@ export class Course extends Component {
         if(this.state.selectedLecture){
         return (
             <div>
-                <Modal isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
+                <Modal size='lg' isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
           <ModalHeader toggle={this.toggleModal}>{this.state.selectedLecture.nama}</ModalHeader>
           <ModalBody>
             <Row>
