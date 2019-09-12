@@ -6,6 +6,7 @@ import About from './About'
 import Contact from './Contact'
 import Client from './Client'
 import Course from './Course'
+import Modalnya from './Modalnya'
 import { Component } from 'react'
 
 export class App extends Component {
@@ -20,6 +21,7 @@ export class App extends Component {
         <Route path='/client' component={Client}/>
         <Route path='/contact' component={Contact}/>
         <Route path='/course' component={Course}/>
+        <Route path='/modal' component={Modalnya}/>
       </BrowserRouter>
     
       </div>

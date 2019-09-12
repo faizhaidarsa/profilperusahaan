@@ -1,17 +1,44 @@
 import React, { Component } from 'react'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardImg,Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardImg, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 export class Course extends Component {
    
     constructor(props) {
         super(props);
-    
+        this.toggleModal = this.toggleModal.bind(this);
         this.toggle = this.toggle.bind(this);
         this.state = {
-          activeTab: '1'
+            modal: false,
+          activeTab: '1',
+          height:0,
+          lecture:[{
+            id:1,  
+            nama:'Ir. Saenal Aladin Rapi, MM',
+            deskripsi:'a NDT professional for aircraft who has performed extensive appplication work in the Garuda Maintenance Facility including: Boeing-747, B737 series, B737NG, A330, A-320 etc. He is certified as NDT-Level III. He has been involved in submitting ASNT conference in US and training to various industrial sectors. He has been responsible for the professional training programs in the fields of welding, casting, airframe, NDT standards etc at National Standardization Bard and Indonesian Societies of NDT. He is also Auditor ISO-17020 on behalf of National Accreditation Board. Presently, he is a NDT consultant, Trainer and Examiner',
+            foto:'images/info-logo-circle_318-947.jpg'
+          },{
+              id:2,
+            nama:'Ir. Aladin Rapi Saenalm, MM',
+            deskripsi:'a NDT professional for aircraft who has performed extensive appplication work in the Garuda Maintenance Facility including: Boeing-747, B737 series, B737NG, A330, A-320 etc. He is certified as NDT-Level III. He has been involved in submitting ASNT conference in US and training to various industrial sectors. He has been responsible for the professional training programs in the fields of welding, casting, airframe, NDT standards etc at National Standardization Bard and Indonesian Societies of NDT. He is also Auditor ISO-17020 on behalf of National Accreditation Board. Presently, he is a NDT consultant, Trainer and Examiner',
+            foto:'images/info-logo-circle_318-947.jpg'
+        },{
+            id:3,
+            nama:'Ir. Rapi Saenal Aladin, MM',
+            deskripsi:'a NDT professional for aircraft who has performed extensive appplication work in the Garuda Maintenance Facility including: Boeing-747, B737 series, B737NG, A330, A-320 etc. He is certified as NDT-Level III. He has been involved in submitting ASNT conference in US and training to various industrial sectors. He has been responsible for the professional training programs in the fields of welding, casting, airframe, NDT standards etc at National Standardization Bard and Indonesian Societies of NDT. He is also Auditor ISO-17020 on behalf of National Accreditation Board. Presently, he is a NDT consultant, Trainer and Examiner',
+            foto:'images/info-logo-circle_318-947.jpg'
+        }],
+        selectedLecture:{}
         };
       }
+
+      toggleModal(id) {
+        this.setState(prevState => ({
+          modal: !prevState.modal
+        }));
+        this.setState({selectedLecture:this.state.lecture[id]})
+    }
     
       toggle(tab) {
         if (this.state.activeTab !== tab) {
@@ -21,18 +48,52 @@ export class Course extends Component {
         }
       }
 
-    state={
-        height:0
-    }
     componentDidMount() {
         this.setState({height:window.innerHeight*0.08})
+
+    }
+
+    
+
+    modal = ()=>{
+        if(this.state.selectedLecture){
+        return (
+            <div>
+                <Modal isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
+          <ModalHeader toggle={this.toggleModal}>{this.state.selectedLecture.nama}</ModalHeader>
+          <ModalBody>
+            <Row>
+              <Col xs='12' sm='6'  className='d-flex align-items-center'><img style={{width:'100%'}} src={this.state.selectedLecture.foto} alt=""/></Col>
+              <Col xs='12' sm='6' className='text-justify' >{this.state.selectedLecture.deskripsi}</Col>
+            </Row>
+            
+          </ModalBody>
+        </Modal>
+            </div>
+        )}
+        else{
+            return null
+        }
+    }
+
+    renderList=()=>{
+        let hasil = this.state.lecture.map((item,key)=>{
+            return(
+                <Col key={key} xs='12' sm='6' md='3' className='p-3'><Card>
+                    <CardImg onClick={()=>{this.toggleModal(key)}} top width="100%" src={item.foto} alt="Card image cap" />
+                    </Card>
+                  </Col>
+            )
+        })
+        return hasil
+        
     }
 
     render() {
         return (
             <div className='container'>
                 <div style={{height:this.state.height}}></div>
-                <h1 className='display-3 text-center mb-4'>Course</h1>
+                <h1 className='display-4 text-center'><strong>Course</strong></h1>
                 <Nav tabs>
           <NavItem>
             <NavLink
@@ -112,40 +173,7 @@ export class Course extends Component {
                 <Col xs='12'>
                     <Card className='px-4'>
             <Row>
-              <Col xs='12' sm='6' md='3' className='p-3'><Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
-              <Col xs='12' sm='6' md='3' className='p-3'>
-              <Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
-              <Col xs='12' sm='6' md='3' className='p-3'>
-              <Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
-              <Col xs='12' sm='6' md='3' className='p-3'>
-              <Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
-              <Col xs='12' sm='6' md='3' className='p-3'>
-              <Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
-              <Col xs='12' sm='6' md='3' className='p-3'>
-              <Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
-              <Col xs='12' sm='6' md='3' className='p-3'>
-              <Card>
-                <CardImg top width="100%" src="/images/info-logo-circle_318-947.jpg" alt="Card image cap" />
-                </Card>
-              </Col>
+              {this.renderList()}
               
             </Row>
             </Card>
@@ -160,7 +188,7 @@ export class Course extends Component {
                 <h6 className='text-center'>The fee for the course includes training and Student Package (Folder, Manual, Hand-outs, etc.)<br/>
                 Issue of the certificate<br/>
                 Buffet lunch, coffee/tea morning and afternoon of each day.</h6>
-                <h4 className=' text-center'>Acomodation</h4>
+                <h4 className=' text-center mt-3'>Acomodation</h4>
                 <h6 className='text-center'>Acomodation is not included in the course fee. However, our staff can arrange for any required accomodation at the time of booking.</h6>
                 </Card>
               </Col>
@@ -168,6 +196,8 @@ export class Course extends Component {
             </Row>
           </TabPane>
         </TabContent>
+        
+        {this.modal()}
             </div>
         )
     }

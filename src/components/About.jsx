@@ -22,7 +22,7 @@ export class About extends Component {
         return (
             <div className='container'>
                 <div style={{height:this.state.height}}></div>
-               <h1 className='display-3 text-center'>About Us</h1> 
+               <h1 className='display-4 text-center'><strong>About Us</strong></h1> 
                 <div className='row'>
                     <div className='col-12 col-sm-12 col-md-6 p-3 '>
                     <Card>
