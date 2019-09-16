@@ -19,7 +19,11 @@ export class App extends Component {
 
 <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
 <a className='navbar-brand text-white' href="#home">NDT Solution</a>
-  <ul className="navbar-nav">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <div id='navbarSupportedContent' className='collapse navbar-collapse'>
+  <ul className="navbar-nav ml-auto">
     <li className="nav-item">
       <a className="nav-link" href="#home">Home</a>
     </li>
@@ -36,6 +40,7 @@ export class App extends Component {
       <a className="nav-link" href="#contact">Contact</a>
     </li>
   </ul>
+  </div>
 </nav>
 
 <div id="home">
