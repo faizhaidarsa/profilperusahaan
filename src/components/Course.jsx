@@ -88,7 +88,7 @@ export class Course extends Component {
 
     render() {
         return (
-            <div className='container'>
+            <div className='container-fluid bg-secondary'>
                 <div style={{height:'60px'}}></div>
                 <h1 className='display-4 text-center mb-3'><strong>Course</strong></h1>
                 <Nav tabs>
@@ -195,6 +195,7 @@ export class Course extends Component {
         </TabContent>
         
         {this.modal()}
+        <div style={{height:'60px'}}></div>
             </div>
         )
     }

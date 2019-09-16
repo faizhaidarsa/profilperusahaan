@@ -13,7 +13,7 @@ export class Contact extends Component {
     
     render() {
         return (
-            <div className='container'>
+            <div className='container-fluid bg-secondary'>
                 <div style={{height:'60px'}}></div>
             <h1 className='display-4 text-center mb-3'><strong>Contact Us</strong></h1>
             <Row>

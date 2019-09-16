@@ -18,7 +18,7 @@ export class About extends Component {
 
     render() {
         return (
-            <div className='container'>
+            <div className='container-fluid'>
                <div style={{height:'60px'}}></div>
                <h1 className='display-4 text-center'><strong>About Us</strong></h1> 
                 <div className='row'>
@@ -48,6 +48,7 @@ export class About extends Component {
       </Card>
                     </div>
                 </div>
+                <div style={{height:'60px'}}></div>
             </div>
         )
     }
