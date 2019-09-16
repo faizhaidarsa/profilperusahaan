@@ -22,7 +22,8 @@ export class About extends Component {
                <div style={{height:'60px'}}></div>
                <h1 className='display-4 text-center'><strong>About Us</strong></h1> 
                 <div className='row'>
-                    <div className='col-12 col-sm-12 col-md-6 p-3 '>
+                    <div className='offset-lg-1'></div>
+                    <div className='col-12 col-sm-12 col-md-6 col-lg-5 p-3 '>
                     <Card>
         <CardBody>
           <CardTitle className='h2 text-center'>Aim and Objective</CardTitle>
@@ -32,7 +33,7 @@ export class About extends Component {
         </CardBody>
       </Card>
                     </div>
-                    <div className='col-12 col-sm-12 col-md-6 p-3 '>
+                    <div className='col-12 col-sm-12 col-md-6 col-lg-5 p-3 '>
                     <Card style={{height:'100%'}}>
         <CardBody>
           <CardTitle className='h2 text-center'>Experiences</CardTitle>

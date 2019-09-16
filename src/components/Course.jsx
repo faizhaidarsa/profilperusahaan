@@ -76,7 +76,7 @@ export class Course extends Component {
     renderList=()=>{
         let hasil = this.state.lecture.map((item,key)=>{
             return(
-                <Col key={key} xs='12' sm='6' md='3' className='p-3'><Card>
+                <Col key={key} xs='12' sm='6' md='3' className='py-3 px-5 px-sm-3'><Card>
                     <CardImg onClick={()=>{this.toggleModal(key)}} top width="100%" src={item.foto} alt="Card image cap" />
                     </Card>
                   </Col>
@@ -90,39 +90,41 @@ export class Course extends Component {
         return (
             <div className='container-fluid bg-secondary'>
                 <div style={{height:'60px'}}></div>
-                <h1 className='display-4 text-center mb-3'><strong>Course</strong></h1>
+                <h1 className='display-4 text-center text-white mb-3'><strong>Course</strong></h1>
+                <div className='row'>
+                  <div className='col-lg-11 mx-auto'>
                 <Nav tabs>
           <NavItem>
-            <NavLink
+            <Button
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >
               Training and Certification Methodology
-            </NavLink>
+            </Button>
           </NavItem>
           <NavItem>
-            <NavLink
+            <Button
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
               Course Outlines
-            </NavLink>
+            </Button>
           </NavItem>
           <NavItem>
-            <NavLink
+            <Button
               className={classnames({ active: this.state.activeTab === '3' })}
               onClick={() => { this.toggle('3'); }}
             >
               Course Coordinator and Lecture
-            </NavLink>
+            </Button>
           </NavItem>
           <NavItem>
-            <NavLink
+            <Button
               className={classnames({ active: this.state.activeTab === '4' })}
               onClick={() => { this.toggle('4'); }}
             >
               Fee and Accomodation
-            </NavLink>
+            </Button>
           </NavItem>
         </Nav>
         <TabContent activeTab={this.state.activeTab} className='mb-3'>
@@ -193,7 +195,8 @@ export class Course extends Component {
             </Row>
           </TabPane>
         </TabContent>
-        
+        </div>
+        </div>
         {this.modal()}
         <div style={{height:'60px'}}></div>
             </div>
