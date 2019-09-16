@@ -48,10 +48,7 @@ export class Course extends Component {
         }
       }
 
-    componentDidMount() {
-        this.setState({height:window.innerHeight*0.08})
-
-    }
+    
 
     
 
@@ -92,7 +89,7 @@ export class Course extends Component {
     render() {
         return (
             <div className='container'>
-                <div style={{height:this.state.height}}></div>
+                <div style={{height:'60px'}}></div>
                 <h1 className='display-4 text-center mb-3'><strong>Course</strong></h1>
                 <Nav tabs>
           <NavItem>
@@ -128,7 +125,7 @@ export class Course extends Component {
             </NavLink>
           </NavItem>
         </Nav>
-        <TabContent activeTab={this.state.activeTab}>
+        <TabContent activeTab={this.state.activeTab} className='mb-3'>
           <TabPane tabId="1">
             <Row>
               <Col xs="12">
