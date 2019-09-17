@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardImg, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-
+import {lecture} from '../data/index'
 export class Course extends Component {
    
     constructor(props) {
@@ -10,26 +10,11 @@ export class Course extends Component {
         this.toggleModal = this.toggleModal.bind(this);
         this.toggle = this.toggle.bind(this);
         this.state = {
-            modal: false,
+          modal: false,
           activeTab: '1',
           height:0,
-          lecture:[{
-            id:1,  
-            nama:'Ir. Saenal Aladin Rapi, MM',
-            deskripsi:'a NDT professional for aircraft who has performed extensive appplication work in the Garuda Maintenance Facility including: Boeing-747, B737 series, B737NG, A330, A-320 etc. He is certified as NDT-Level III. He has been involved in submitting ASNT conference in US and training to various industrial sectors. He has been responsible for the professional training programs in the fields of welding, casting, airframe, NDT standards etc at National Standardization Bard and Indonesian Societies of NDT. He is also Auditor ISO-17020 on behalf of National Accreditation Board. Presently, he is a NDT consultant, Trainer and Examiner',
-            foto:'images/info-logo-circle_318-947.jpg'
-          },{
-              id:2,
-            nama:'Ir. Aladin Rapi Saenal, MM',
-            deskripsi:'a NDT professional for aircraft who has performed extensive appplication work in the Garuda Maintenance Facility including: Boeing-747, B737 series, B737NG, A330, A-320 etc. He is certified as NDT-Level III. He has been involved in submitting ASNT conference in US and training to various industrial sectors. He has been responsible for the professional training programs in the fields of welding, casting, airframe, NDT standards etc at National Standardization Bard and Indonesian Societies of NDT. He is also Auditor ISO-17020 on behalf of National Accreditation Board. Presently, he is a NDT consultant, Trainer and Examiner',
-            foto:'images/info-logo-circle_318-947.jpg'
-        },{
-            id:3,
-            nama:'Ir. Rapi Saenal Aladin, MM',
-            deskripsi:'a NDT professional for aircraft who has performed extensive appplication work in the Garuda Maintenance Facility including: Boeing-747, B737 series, B737NG, A330, A-320 etc. He is certified as NDT-Level III. He has been involved in submitting ASNT conference in US and training to various industrial sectors. He has been responsible for the professional training programs in the fields of welding, casting, airframe, NDT standards etc at National Standardization Bard and Indonesian Societies of NDT. He is also Auditor ISO-17020 on behalf of National Accreditation Board. Presently, he is a NDT consultant, Trainer and Examiner',
-            foto:'images/info-logo-circle_318-947.jpg'
-        }],
-        selectedLecture:{}
+          lecture:lecture,
+          selectedLecture:{}
         };
       }
 
@@ -95,7 +80,7 @@ export class Course extends Component {
                   <div className='col-lg-11 mx-auto'>
                 <Nav tabs>
           <NavItem>
-            <Button
+            <Button className='text-left'
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >

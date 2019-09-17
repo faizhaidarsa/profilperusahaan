@@ -24,8 +24,8 @@ export class Contact extends Component {
                 <Col xs='12' sm='12' md='6' className='d-flex align-items-center'>
                     
                     <div>
-                        <h4 className='text-white'><img width='40px' src="images/mail.svg" className='mr-1 mr-sm-2 mt-2 mt-md-0' alt=""/>sarndtservice@gmail.com</h4>                    
-                        <h4 className='text-white'><img width='40px' src="images/phone.svg" className='mr-1 mr-sm-2' alt=""/>08129258446</h4>
+                        <h5 className='text-white'><img width='38px' src="images/mail.svg" className='mr-1 mr-sm-2 mt-2 mt-md-0' alt=""/>sarndtservice@gmail.com</h5>                    
+                        <h5 className='text-white'><img width='38px' src="images/phone.svg" className='mr-1 mr-sm-2' alt=""/>08129258446</h5>
                     </div>
                 
                 </Col>
