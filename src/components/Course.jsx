@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, CardImg, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem,  Card, CardImg,  Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import {lecture} from '../data/index'
 export class Course extends Component {
    
@@ -80,7 +80,7 @@ export class Course extends Component {
                   <div className='col-lg-11 mx-auto'>
                 <Nav tabs>
           <NavItem>
-            <Button className='text-left'
+            <Button
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >

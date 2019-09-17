@@ -11,16 +11,28 @@ import Course from './Course'
 import { Component } from 'react'
 
 export class App extends Component {
+  
+  state={
+    nav:'collapse navbar-collapse'
+  }
+
+  onClickItem=()=>{
+    console.log(this.state.nav);
+    this.setState({nav:'collapse navbar-collapse'})
+    console.log(this.state.nav);
+    
+  }
+
   render() {
     return (
-      <div>
       
-      <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      
+      <div>
 
-<nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+<nav id='navbarnya' className="navbar navbar-expand-sm bg-transparent navbar-dark fixed-top">  
 <a className='navbar-brand text-white' href="#home">NDT Solution</a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
     </button>
   <div id='navbarSupportedContent' className='collapse navbar-collapse'>
   <ul className="navbar-nav ml-auto">
@@ -59,9 +71,9 @@ export class App extends Component {
   <Contact/>
 </div>
 
-</body>
+</div>
     
-      </div>
+      
     )
   }
 }

@@ -11,7 +11,7 @@ export class Home extends Component {
     
     render() {
         return (
-            <div className='container-fluid bg-secondary'>
+            <div id='homenya' className='container-fluid bg-secondary'>
                 <div style={{height:'120px'}}></div>
                 <h1 className='display-4 text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1>
                 <h1 className='h-4 text-center text-white'>SERVICE AND TRAINING</h1>
