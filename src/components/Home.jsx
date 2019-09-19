@@ -11,16 +11,18 @@ export class Home extends Component {
     
     render() {
         return (
-            <div id='homenya' className='container-fluid bg-secondary'>
-                <div style={{height:'250px'}}></div>
-                <h1 className='display-4 text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1>
-                <h1 className='h-4 text-center text-white'>SERVICE AND TRAINING</h1>
-                <div className='row px-5'>
+            <div id='homenya' className='container-fluid bg-secondary d-flex align-items-center justify-content-center' style={{height:this.state.height}}>
+                
+                <div className='row'>
+                <div className='col-12'><h1 className='display-4 text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1></div>
+                <div className='col-12'><h1 className='h-4 text-center text-white'>SERVICE AND TRAINING</h1></div>
+                
                     <div className='col-6 mx-auto mt-5'>
                         <button className='btn btn-block btn-success'>View Our Course</button>
                     </div>
+                
                 </div>
-                <div style={{height:'250px'}}></div>
+                
             </div>
         )
     }
