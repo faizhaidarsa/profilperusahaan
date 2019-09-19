@@ -42,9 +42,9 @@ export class App extends Component {
     <li className="nav-item">
       <a className="nav-link" href="#about">About</a>
     </li>
-    <li className="nav-item">
+    {/* <li className="nav-item">
       <a className="nav-link" href="#course">Course</a>
-    </li>
+    </li> */}
     <li className="nav-item">
       <a className="nav-link" href="#client">Client</a>
     </li>

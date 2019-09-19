@@ -21,9 +21,9 @@ export class About extends Component {
             <div className='container-fluid'>
                <div style={{height:'60px'}}></div>
                <h1 className='display-4 text-center'><strong>About Us</strong></h1> 
-                <div className='row'>
+                <div className='row d-flex align-items-center py-5'>
                     <div className='offset-lg-1'></div>
-                    <div className='col-12 col-sm-12 col-md-6 col-lg-5 p-3 '>
+                    <div className='col-12 col-sm-12 col-md-6 col-lg-5'>
                     <Card>
         <CardBody>
           <CardTitle className='h2 text-center'>Aim and Objective</CardTitle>
@@ -33,20 +33,40 @@ export class About extends Component {
         </CardBody>
       </Card>
                     </div>
-                    <div className='col-12 col-sm-12 col-md-6 col-lg-5 p-3 '>
-                    <Card style={{height:'100%'}}>
-        <CardBody>
-          <CardTitle className='h2 text-center'>Experiences</CardTitle>
-          
-          
-              <ol>
-                  <li>NDT For Boeing-747, A330, A320, B737 series, ATR etc.</li>
-                  <li>NDT For Fabrication, Refinery, Power Plant, Pipe etc.</li>
-              </ol>
-          
-          
-        </CardBody>
-      </Card>
+                    <div className='col-12 col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center pt-5 pt-md-0 px-5'>
+                    <img src="images\missiondsb.png" alt=""/>
+                    </div>
+                </div>
+                <div className='row p-5'>
+                    <div className='col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5'>
+                        <div className='p-5' style={{backgroundColor:'yellow',border: '3px solid black',borderRadius: '100%'}}>
+                        <img width='100%' src="images\Experience.png" alt=""/>
+                        </div>
+                        <div className='text-center'>
+                        <h5 className='font-weight-bold mt-3'>Experiences</h5>
+                        <p>NDT For Boeing-747, A330, A320, B737 series, ATR etc.</p>
+                        <p>NDT For Fabrication, Refinery, Power Plant, Pipe etc.</p>
+                        </div>
+                    </div>
+                    <div className='col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5'>
+                    <div className='p-5' style={{backgroundColor:'yellow',border: '3px solid black',borderRadius: '100%'}}>
+
+                        <img width='100%' src="images\mission.png" alt=""/>
+                        </div>
+                        <div className='text-center'>
+                        <h5 className='font-weight-bold mt-3'>Mission Statement</h5>
+                        <p>to be the premier NDT education company in Indonesia and Asia, and to provide industry-leading consulting and auditing service. We strive to exceed our clients expectations, and to provide an unmatched level of service in our field.</p>
+                        </div>
+                    </div>
+                    <div className='col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5'>
+
+                    <div className='p-5' style={{backgroundColor:'yellow',border: '3px solid black',borderRadius: '100%'}}>
+                        <img width='100%' src="images\corebeliefs.png" alt=""/>
+                        </div>
+                        <div className='text-center'>
+                        <h5 className='font-weight-bold mt-3'>Core Beliefs</h5>
+                        <p>Our core beliefs are built upon: our mission, our investment, our commitment and our culture as illustrated by the chart below.</p>
+                        </div>
                     </div>
                 </div>
                 <div style={{height:'60px'}}></div>

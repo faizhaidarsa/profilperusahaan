@@ -12,16 +12,15 @@ export class Home extends Component {
     render() {
         return (
             <div id='homenya' className='container-fluid bg-secondary'>
-                <div style={{height:'120px'}}></div>
+                <div style={{height:'250px'}}></div>
                 <h1 className='display-4 text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1>
                 <h1 className='h-4 text-center text-white'>SERVICE AND TRAINING</h1>
                 <div className='row px-5'>
-                    <div className='col-12 col-sm-6 col-md-3 p-3'><img className='border border-silver rounded-lg' width='100%' src="images\info-logo-circle_318-947.jpg" alt=""/></div>
-                    <div className='col-12 col-sm-6 col-md-3 p-3'><img className='border border-silver rounded-lg' width='100%' src="images\info-logo-circle_318-947.jpg" alt=""/></div>
-                    <div className='col-12 col-sm-6 col-md-3 p-3'><img className='border border-silver rounded-lg' width='100%' src="images\info-logo-circle_318-947.jpg" alt=""/></div>
-                    <div className='col-12 col-sm-6 col-md-3 p-3'><img className='border border-silver rounded-lg' width='100%' src="images\info-logo-circle_318-947.jpg" alt=""/></div>
+                    <div className='col-6 mx-auto mt-5'>
+                        <button className='btn btn-block btn-success'>View Our Course</button>
+                    </div>
                 </div>
-                <div style={{height:'120px'}}></div>
+                <div style={{height:'250px'}}></div>
             </div>
         )
     }
