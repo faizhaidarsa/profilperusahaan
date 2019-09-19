@@ -13,7 +13,7 @@ export class Client extends Component {
 
         
         return (
-            <div className='container-fluid'>
+            <div className='container-fluid border-top border-bottom'>
             <div style={{height:'60px'}}></div>
             <h1 className='display-4 text-center'><strong>Our Client</strong></h1>
                 <Row className='px-5'>

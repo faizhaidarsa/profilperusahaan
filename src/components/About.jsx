@@ -18,7 +18,7 @@ export class About extends Component {
 
     render() {
         return (
-            <div className='container-fluid'>
+            <div className='container-fluid border-top border-bottom'>
                <div style={{height:'60px'}}></div>
                <h1 className='display-4 text-center'><strong>About Us</strong></h1> 
                 <div className='row d-flex align-items-center py-5'>

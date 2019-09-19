@@ -13,9 +13,9 @@ export class Contact extends Component {
     
     render() {
         return (
-            <div className='container-fluid bg-secondary'>
+            <div className='container-fluid border-top border-bottom'>
                 <div style={{height:'60px'}}></div>
-            <h1 className='display-4 text-center mb-3 text-white'><strong>Contact Us</strong></h1>
+            <h1 className='display-4 text-center mb-3'><strong>Contact Us</strong></h1>
             <Row>
                 <div className='offset-md-1'></div>
                 <Col xs='12' sm='12' md='5' className=''>
@@ -26,15 +26,15 @@ export class Contact extends Component {
                     <div className='mt-2 mt-sm-2 mt-md-0'>
                         <div className='row d-flex align-items-center'>
                             <div className='col-2'><img width='40px' src="images/mail.svg" className='mr-1 mr-sm-2 mt-2 mt-md-0' alt=""/></div>
-                            <div className='col-10'><h5 className='text-white'>sarndtservice@gmail.com</h5></div>
+                            <div className='col-10'><h5 className=''>sarndtservice@gmail.com</h5></div>
                         </div>
                         <div className='row d-flex align-items-center'>
                             <div className='col-2'><img width='40px' src="images/phone.svg" className='mr-1 mr-sm-2 mt-2 mt-md-0' alt=""/></div>
-                            <div className='col-10'><h5 className='text-white'>08129258446</h5></div>
+                            <div className='col-10'><h5 className=''>08129258446</h5></div>
                         </div>
                         <div className='row d-flex align-items-center'>
                             <div className='col-2'><img width='40px' src="images/pin.png" className='mr-1 mr-sm-2 mt-2 mt-md-0' alt=""/></div>
-                            <div className='col-10'><h5 className='text-white'>Jl. Raya Serpong Puri Serpong Blok H No.1<br/>Tangerang Selatan - Banten</h5></div>
+                            <div className='col-10'><h5 className=''>Jl. Raya Serpong Puri Serpong Blok H No.1<br/>Tangerang Selatan - Banten</h5></div>
                         </div>
                     </div>
                 
