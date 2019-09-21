@@ -41,8 +41,6 @@ export class Contact extends Component {
                 </Col>
             </Row>
             <div style={{height:'200px'}}></div>
-            <div className='footer fixed-bottom bg-dark text-white text-center'>
-                <h6 className='my-3'>Copyright ASNT Corporate Partner 2019</h6></div>
             </div>
         )
     }
