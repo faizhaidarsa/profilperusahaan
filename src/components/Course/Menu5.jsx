@@ -32,7 +32,7 @@ export class Menu5 extends Component {
           <ModalHeader className='border-bottom-0' toggle={this.toggleModal}></ModalHeader>
           <ModalBody>
             <Row>
-              <Col xs='12' sm='6'  className='d-flex align-items-center'><img style={{width:'100%'}} src={this.state.selectedLecture.foto} alt=""/></Col>
+              <Col xs='12' sm='6'  className='d-flex align-items-center mb-3 mb-sm-0'><img style={{width:'100%'}} src={this.state.selectedLecture.foto} alt=""/></Col>
               <Col xs='12' sm='6' className='text-justify' >
               <h4 className='text-center'>{this.state.selectedLecture.nama}</h4>
               <h5 className='text-center'>({this.state.selectedLecture.role})</h5>

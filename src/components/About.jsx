@@ -46,11 +46,11 @@ export class About extends Component {
                 </Card>
               </div>
               <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center pt-5 pt-md-0 px-5">
-                <img src="images\missiondsb.png" alt="" />
-              </div>
+                <img width='100%' height='100%' src="images\missiondsb.png" alt="" />
+              </div> 
             </div>
-            <div className="row p-5">
-              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
+            <div className="row px-3 px-sm-5 px-md-0">
+              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 p-3">
                 <div
                   className="p-5"
                   style={{
@@ -59,7 +59,7 @@ export class About extends Component {
                     borderRadius: "100%"
                   }}
                 >
-                  <img width="100%" src="images\Experience.png" alt="" />
+                  <img width="100%" height='100%' src="images\Experience.png" alt="" />
                 </div>
                 <div className="text-center">
                   <h5 className="font-weight-bold mt-3">Experiences</h5>
@@ -67,7 +67,7 @@ export class About extends Component {
                   <p>NDT For Fabrication, Refinery, Power Plant, Pipe etc.</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
+              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 p-3">
                 <div
                   className="p-5"
                   style={{
@@ -76,7 +76,7 @@ export class About extends Component {
                     borderRadius: "100%"
                   }}
                 >
-                  <img width="100%" src="images\mission.png" alt="" />
+                  <img width="100%" height='100%' src="images\mission.png" alt="" />
                 </div>
                 <div className="text-center">
                   <h5 className="font-weight-bold mt-3">Mission Statement</h5>
@@ -89,7 +89,7 @@ export class About extends Component {
                   </p>
                 </div>
               </div>
-              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
+              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 p-3">
                 <div
                   className="p-5"
                   style={{
