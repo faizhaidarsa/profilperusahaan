@@ -19,8 +19,8 @@ export class Home extends Component {
                 <div className='col-12'><h1 className='h-4 text-center text-white'>SERVICE AND TRAINING</h1></div>
                 
                     <div className='col-6 mx-auto mt-5'>
-                        <Link to='/sub'>
-                        <button className='btn btn-block btn-success'>View Our Course</button>
+                        <Link to='/sub' className='btn btn-success btn-block'>
+                        View Our Course
                         </Link>
                     </div>
                 

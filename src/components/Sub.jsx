@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import Consultant from './Consultant'
-import Course from './Course'
+import Consultant from './Consultant/Consultant'
+import Course from './Course/Course'
 import Contact from './Contact'
 
 
@@ -33,7 +33,7 @@ export class Sub extends Component {
               >
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <Link className="nav-link text-white mr-5" to='/'>
+                    <Link className="nav-link text-white font-weight-bold" to='/'>
                       Home
                     </Link>
                   </li>

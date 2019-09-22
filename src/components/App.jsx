@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
-import Utama from './Utama'
+import Main from './Main'
 import Sub from './Sub'
 
 
@@ -12,7 +12,7 @@ export class App extends Component {
     return (
       <div>
       <BrowserRouter>
-        <Route exact path='/' component={Utama}/>
+        <Route exact path='/' component={Main}/>
         <Route path='/sub' component={Sub}/>
       </BrowserRouter>
       </div>

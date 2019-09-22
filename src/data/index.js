@@ -16,3 +16,11 @@ export const lecture=[
         foto:'images/info-logo-circle_318-947.jpg'
     }
 ]
+
+export const schedule=[
+    {
+        course:'Eddy Current Level I',
+        price:'7000000',
+        schedule:'TBD'
+    }
+]
