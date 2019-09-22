@@ -25,12 +25,14 @@ export class Course extends Component {
 
     render() {
         return (
-          <div className="container-fluid border-top border-bottom">
-            <div style={{ height: "60px" }}></div>
-            <h1 className="display-4 text-center mb-3">
-              <strong>Consultant</strong>
-            </h1>
-            <div className='container'>
+          <div className="container-fluid border-top border-bottom pb-5">
+           <div className='row'>
+                
+                  <div className='col-12 bg-dark' style={{backgroundImage:`url(images/istockphoto-937257284-1024x1024e.jpg)`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                  <h1 className='display-4 text-center text-white py-5'><strong>Consultant</strong></h1>
+                  </div>
+                </div>
+            <div className='container mt-5'>
             <div className="row">
               <div className="col-12 col-sm-12 col-md-3">
                 <Link onClick={()=>{this.clickMenu(1)}} className='nav-link p-0 py-2' to='#'>Auditing</Link>     
@@ -43,9 +45,7 @@ export class Course extends Component {
               </div>
             </div>
             </div>
-            
-            
-            <div style={{ height: "60px" }}></div>
+
           </div>
         );
     }

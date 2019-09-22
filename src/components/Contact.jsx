@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Row, Col} from 'reactstrap'
+
 
 export class Contact extends Component {
     
@@ -13,15 +13,17 @@ export class Contact extends Component {
     
     render() {
         return (
-            <div className='container-fluid border-top border-bottom'>
-                <div style={{height:'60px'}}></div>
-            <h1 className='display-4 text-center mb-3'><strong>Contact Us</strong></h1>
-            <Row>
-                <div className='offset-md-1'></div>
-                <Col xs='12' sm='12' md='5' className=''>
+            <div className='container-fluid border-top d-flex align-items-center py-5'>
+            <div className='container'>    
+            <div className='row'>
+            <div className='col-12'><h1 className='display-4 text-center mb-5'><strong>Contact Us</strong></h1></div>
+            </div>
+            <div className='row'>
+                
+                <div className='col-12 col-md-6'>
                 <div id="map" className='rounded-lg' style={{height:this.state.height*0.5,width:'100%'}}></div>
-                </Col>
-                <Col xs='12' sm='12' md='6' className='d-flex align-items-center'>
+                </div>
+                <div className='col-12 col-md-6 d-flex align-items-center'>
                     
                     <div className='mt-2 mt-sm-2 mt-md-0'>
                         <div className='row d-flex align-items-center'>
@@ -38,9 +40,10 @@ export class Contact extends Component {
                         </div>
                     </div>
                 
-                </Col>
-            </Row>
-            <div style={{height:'200px'}}></div>
+                </div>
+                </div>
+            </div>
+           
             </div>
         )
     }

@@ -69,6 +69,7 @@ export class Utama extends Component {
             <div id="contact">
               <Contact />
             </div>
+            <div style={{height:'120px'}}></div>
             <div className='footer fixed-bottom bg-dark text-white text-center'>
                 <h6 className='my-3'>Copyright ASNT Corporate Partner 2019</h6></div>
           </div>

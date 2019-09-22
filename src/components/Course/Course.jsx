@@ -6,6 +6,7 @@ import Menu3 from './Menu3'
 import Menu4 from './Menu4'
 import Menu5 from './Menu5'
 import Menu6 from './Menu6'
+
 export class Course extends Component {
    
       
@@ -39,11 +40,17 @@ export class Course extends Component {
 
     render() {
         return (
-            <div className='container-fluid border-top border-bottom'>
-                <div style={{height:'60px'}}></div>
-                <h1 className='display-4 text-center mb-3'><strong>Course</strong></h1>
+            <div className='container-fluid border-top border-bottom pb-5'>
                 
-                  <div className='container'>
+                
+                <div className='row'>
+                <div className='bg-dark col-12' style={{height:'60px'}}></div>
+                  <div className='col-12' style={{backgroundImage:`url(images/istockphoto-937257284-1024x1024e.jpg)`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                  <h1 className='display-4 text-center text-white py-5'><strong>Course</strong></h1>
+                   
+                  </div>
+                </div>
+                  <div className='container mt-5'>
                   <div className='row'>
                   <div className='col-12 col-sm-12 col-md-3'>
                     
@@ -66,7 +73,7 @@ export class Course extends Component {
                   </div>
                   </div>
 
-        <div style={{height:'60px'}}></div>
+
             </div>
         )
     }

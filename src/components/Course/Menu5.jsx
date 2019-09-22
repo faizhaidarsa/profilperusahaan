@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Modal, ModalHeader, ModalBody} from 'reactstrap';
+import {Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import { Card, CardImg,  Row, Col } from 'reactstrap';
 import {lecture} from '../../data/index'
 
@@ -29,14 +29,19 @@ export class Menu5 extends Component {
         return (
             <div>
                 <Modal size='lg' isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
-          <ModalHeader toggle={this.toggleModal}>{this.state.selectedLecture.nama}</ModalHeader>
+          <ModalHeader className='border-bottom-0' toggle={this.toggleModal}></ModalHeader>
           <ModalBody>
             <Row>
               <Col xs='12' sm='6'  className='d-flex align-items-center'><img style={{width:'100%'}} src={this.state.selectedLecture.foto} alt=""/></Col>
-              <Col xs='12' sm='6' className='text-justify' >{this.state.selectedLecture.deskripsi}</Col>
+              <Col xs='12' sm='6' className='text-justify' >
+              <h4 className='text-center'>{this.state.selectedLecture.nama}</h4>
+              <h5 className='text-center'>({this.state.selectedLecture.role})</h5>
+              <p>{this.state.selectedLecture.deskripsi}</p>
+              </Col>
             </Row>
             
           </ModalBody>
+          <ModalFooter className='border-top-0'></ModalFooter>
         </Modal>
             </div>
         )}

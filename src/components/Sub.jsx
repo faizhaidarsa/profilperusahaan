@@ -13,9 +13,9 @@ export class Sub extends Component {
               id="navbarnyasub"
               className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
             >
-              <a className="navbar-brand text-white" href="#home">
+              <Link className="navbar-brand text-white" to='/'>
                 NDT Solution
-              </a>
+              </Link>
               <button
                 className="navbar-toggler ml-auto"
                 type="button"
@@ -67,6 +67,7 @@ export class Sub extends Component {
             <div id="contact">
               <Contact />
             </div>
+            <div style={{height:'120px'}}></div>
             <div className='footer fixed-bottom bg-dark text-white text-center'>
                 <h6 className='my-3'>Any Question? Please Call 08129258446 Or Email Us sarndtservice@gmail.com</h6></div>
           </div>
