@@ -49,7 +49,7 @@ export class Menu4 extends Component {
     sortPrice=()=>{
         let sortedByPrice=this.state.schedule
         this.setState({sortPrice:this.state.sortPrice*-1})
-        sortedByPrice.sort((b,a)=>{
+        sortedByPrice.sort((a,b)=>{
             return a.price-b.price*this.state.sortPrice
         })
 
