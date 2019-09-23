@@ -47,13 +47,13 @@ export class Menu4 extends Component {
     }
 
     sortPrice=()=>{
-        let sortedByCourse=this.state.schedule
+        let sortedByPrice=this.state.schedule
         this.setState({sortPrice:this.state.sortPrice*-1})
-        sortedByCourse.sort((b,a)=>{
+        sortedByPrice.sort((b,a)=>{
             return a.price-b.price*this.state.sortPrice
         })
 
-        this.setState({schedule:sortedByCourse})
+        this.setState({schedule:sortedByPrice})
     }
 
     numberWithCommas=(x)=> {
