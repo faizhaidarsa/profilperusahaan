@@ -4,7 +4,6 @@ import Consultant from './Consultant/Consultant'
 import Course from './Course/Course'
 import Contact from './Contact'
 
-
 export class Sub extends Component {
     render() {
         return (
@@ -33,13 +32,13 @@ export class Sub extends Component {
               >
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <Link className="nav-link text-white font-weight-bold" to='/'>
-                      Home
+                    <Link className="nav-link" to='/'>
+                      Home Page
                     </Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#course">
-                      Course
+                      Courses
                     </a>
                   </li>
                   <li className="nav-item">
@@ -48,9 +47,9 @@ export class Sub extends Component {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#contact">
+                    <Link className="nav-link" href="#contact">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -59,14 +58,12 @@ export class Sub extends Component {
               <Home />
             </div> */}
             <div id="course">
-              <Course />
+              <Course/>
             </div>
             <div id="consultant">
               <Consultant/>
             </div>
-            <div id="contact">
-              <Contact />
-            </div>
+            
             <div style={{height:'120px'}}></div>
             <div className='footer fixed-bottom bg-dark text-white text-center'>
                 <h6 className='my-3'>Any Question? Please Call 08129258446 Or Email Us sarndtservice@gmail.com</h6></div>

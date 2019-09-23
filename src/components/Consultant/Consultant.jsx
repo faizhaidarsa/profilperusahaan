@@ -25,7 +25,7 @@ export class Course extends Component {
 
     render() {
         return (
-          <div className="container-fluid border-top border-bottom pb-5">
+          <div className="container-fluid border-top pb-5">
            <div className='row'>
                 
                   <div className='col-12 bg-dark' style={{backgroundImage:`url(images/istockphoto-937257284-1024x1024e.jpg)`,backgroundSize:'cover',backgroundPosition:'center'}}>

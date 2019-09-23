@@ -46,7 +46,7 @@ export class Course extends Component {
                 <div className='row'>
                 <div className='bg-dark col-12' style={{height:'60px'}}></div>
                   <div className='col-12 bg-dark' style={{backgroundImage:`url(images/istockphoto-937257284-1024x1024e.jpg)`,backgroundSize:'cover',backgroundPosition:'center'}}>
-                  <h1 className='display-4 text-center text-white py-5'><strong>Course</strong></h1>
+                  <h1 className='display-4 text-center text-white py-5'><strong>Courses</strong></h1>
                    
                   </div>
                 </div>

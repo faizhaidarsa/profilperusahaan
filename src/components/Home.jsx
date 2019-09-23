@@ -12,7 +12,7 @@ export class Home extends Component {
     
     render() {
         return (
-            <div id='homenya' className='container-fluid bg-secondary d-flex align-items-center justify-content-center' style={{height:this.state.height}}>
+            <div id='homenya' className='container-fluid d-flex align-items-center justify-content-center' style={{backgroundImage:`url(images/istockphoto-937257284-1024x1024e.jpg)`,backgroundSize:'cover',backgroundPosition:'center',height:this.state.height}}>
                 
                 <div className='row'>
                 <div className='col-12'><h1 className='text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1></div>
@@ -20,7 +20,7 @@ export class Home extends Component {
                 
                     <div className='col-6 mx-auto mt-5'>
                         <Link to='/sub' className='btn btn-success btn-block'>
-                        View Our Course
+                        Courses & Services
                         </Link>
                     </div>
                 
