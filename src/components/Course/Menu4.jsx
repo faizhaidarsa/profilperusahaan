@@ -4,11 +4,56 @@ import {schedule} from '../../data/index'
 export class Menu4 extends Component {
     
     state={
-        schedule:schedule
+        schedule:schedule,
+        sortCourse:1,
+        sortPrice:1,
+        sortschedule:1
     }
 
     componentDidMount(){
 
+    }
+
+    sortCourse=()=>{
+        let sortedByCourse=this.state.schedule
+        this.setState({sortCourse:this.state.sortCourse*-1})
+        sortedByCourse.sort((a,b)=>{
+            if(a.course<b.course){
+                return 1*this.state.sortCourse
+            }else if(a==b){
+                return 0*this.state.sortCourse
+            }else{
+                return -1*this.state.sortCourse
+            }
+        })
+
+        this.setState({schedule:sortedByCourse})
+    }
+
+    sortSchedule=()=>{
+        let sortedBySchedule=this.state.schedule
+        this.setState({sortSchedule:this.state.sortSchedule*-1})
+        sortedBySchedule.sort((a,b)=>{
+            if(a.schedule<b.schedule){
+                return 1*this.state.sortSchedule
+            }else if(a==b){
+                return 0*this.state.sortSchedule
+            }else{
+                return -1*this.state.sortSchedule
+            }
+        })
+
+        this.setState({schedule:sortedBySchedule})
+    }
+
+    sortPrice=()=>{
+        let sortedByCourse=this.state.schedule
+        this.setState({sortPrice:this.state.sortPrice*-1})
+        sortedByCourse.sort((b,a)=>{
+            return a.price-b.price*this.state.sortPrice
+        })
+
+        this.setState({schedule:sortedByCourse})
     }
 
     numberWithCommas=(x)=> {
@@ -29,24 +74,38 @@ export class Menu4 extends Component {
         })
     }
     
+   
+
     render() {
         return (
-            <div>
-                <table className='table table-bordered w-100'>
-                    <thead className='bg-silver'>
-                        <tr>
-                        <th>Course</th>
-                        <th>Price</th>
-                        <th>Schedule</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {this.renderTable()}
-                    </tbody>
-                </table>
-                
-            </div>
-        )
+          <div>
+            <table className="table table-bordered w-100">
+              <thead className="bg-silver">
+                <tr>
+                  <th onClick={this.sortCourse}>
+                    <div className="row no-gutters">
+                      <div className="col-12 col-sm-10">Course</div>
+                      <div className="col-12 col-sm-2"><img width='18px' src="images\icons8-sort-24.png" alt=""/></div>
+                    </div>
+                  </th>
+                  <th onClick={this.sortPrice}>
+                    <div className="row no-gutters">
+                      <div className="col-12 col-sm-10">Price</div>
+                      <div className="col-12 col-sm-2"><img width='18px' src="images\icons8-sort-24.png" alt=""/></div>
+                    </div>
+                  </th>
+                  <th onClick={this.sortSchedule}>
+                    <div className="row no-gutters">
+                      <div className="col-12 col-sm-10">Schedule</div>
+                      <div className="col-12 col-sm-2"><img width='18px' src="images\icons8-sort-24.png" alt=""/></div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>{this.renderTable()}</tbody>
+            </table>
+          </div>
+        );
     }
 }
 

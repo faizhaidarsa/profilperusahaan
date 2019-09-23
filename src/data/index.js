@@ -25,5 +25,10 @@ export const schedule=[
         course:'Eddy Current Level I',
         price:'7000000',
         schedule:'TBD'
+    },
+    {
+        course:'Eddy Current Level II',
+        price:'10000000',
+        schedule:'TBD'
     }
 ]

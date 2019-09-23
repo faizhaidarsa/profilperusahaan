@@ -33,7 +33,7 @@ export class About extends Component {
                     </CardTitle>
 
                     <CardText className="text-justify">
-                      TO server and train the industrial society with the
+                      TO serve and train the industrial society with the
                       qualified and certified personnel of Levels I, II and III
                       in the Nondestructive Ultrasonic Testing techniques: The
                       training and certification process is performed according
