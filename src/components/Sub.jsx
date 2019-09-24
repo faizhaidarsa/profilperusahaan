@@ -85,7 +85,7 @@ export class Sub extends Component {
   render() {
         return (
           <div>
-            <div className="bg-danger" style={{ height: "50px" }}></div>
+            <div className="bg-dark" style={{ height: "50px" }}></div>
             <nav
               id="navbarnyasub"
               className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
