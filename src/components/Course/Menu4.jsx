@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {schedule} from '../../../data/index'
+import {schedule} from '../../data/index'
 
 export class Menu4 extends Component {
     
