@@ -20,7 +20,7 @@ export class Menu4 extends Component {
         sortedByCourse.sort((a,b)=>{
             if(a.course>b.course){
                 return 1*this.state.sortCourse
-            }else if(a.course==b.course){
+            }else if(a.course===b.course){
                 return 0*this.state.sortCourse
             }else{
                 return -1*this.state.sortCourse
@@ -36,7 +36,7 @@ export class Menu4 extends Component {
         sortedBySchedule.sort((a,b)=>{
             if(a.schedule>b.schedule){
                 return 1*this.state.sortSchedule
-            }else if(a.schedule==b.schedule){
+            }else if(a.schedule===b.schedule){
                 return 0*this.state.sortSchedule
             }else{
                 return -1*this.state.sortSchedule
