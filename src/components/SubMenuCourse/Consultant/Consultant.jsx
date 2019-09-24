@@ -25,10 +25,10 @@ export class Course extends Component {
 
     render() {
         return (
-          <div className="container-fluid border-top pb-5">
+          <div className="container-fluid pb-5">
            <div className='row'>
                 
-                  <div className='col-12 bg-dark' style={{backgroundImage:`url(images/istockphoto-937257284-1024x1024e.jpg)`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                  <div className='col-12 bg-dark' style={{backgroundImage:`url(../images/bge.jpg)`,backgroundSize:'cover',backgroundPosition:'center'}}>
                   <h1 className='display-4 text-center text-white py-5'><strong>Consultant</strong></h1>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export class Course extends Component {
               </div>
             </div>
             </div>
-
+            <div style={{height:'50px'}}></div>
           </div>
         );
     }

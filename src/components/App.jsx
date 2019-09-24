@@ -2,7 +2,10 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
 import Main from './Main'
 import Sub from './Sub'
-
+// import Contact from './Contact'
+// import SubMenuCoursesConsultant from './SubMenuCourse/SubMenuCoursesConsultant'
+import Course from './SubMenuCourse/Course/Course'
+import Consultant from './SubMenuCourse/Consultant/Consultant'
 
 import { Component } from 'react'
 
@@ -14,6 +17,8 @@ export class App extends Component {
       <BrowserRouter>
         <Route exact path='/' component={Main}/>
         <Route path='/sub' component={Sub}/>
+        <Route path='/sub/course' component={Course}/>
+        <Route path='/sub/consultant' component={Consultant}/>       
       </BrowserRouter>
       </div>
     )

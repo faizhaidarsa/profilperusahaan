@@ -19,7 +19,7 @@ export class Home extends Component {
                 <div className='col-12'><h2 className='h-4 text-center text-white'>SERVICE AND TRAINING</h2></div>
                 
                     <div className='col-6 mx-auto mt-5'>
-                        <Link to='/sub' className='btn btn-success btn-block'>
+                        <Link to='/sub/course' className='btn btn-success btn-block'>
                         Courses & Services
                         </Link>
                     </div>

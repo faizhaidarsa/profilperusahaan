@@ -1,18 +1,96 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import Consultant from './Consultant/Consultant'
-import Course from './Course/Course'
-import Contact from './Contact'
+
+
 
 export class Sub extends Component {
-    render() {
+  
+  state={
+    active:'course'
+  }
+  
+  onClick=(val)=>{
+    this.setState({active:val})
+  }
+
+  renderLink=()=>{
+    if(this.state.active==='course'){
+      return (
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              Home Page
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              onClick={() => {
+                this.onClick("course");
+              }}
+              className="nav-link active"
+              to="/sub/course"
+            >
+              Courses
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              onClick={() => {
+                this.onClick("consultant");
+              }}
+              className="nav-link"
+              to="/sub/consultant"
+            >
+              Consultant
+            </Link>
+          </li>
+        </ul>
+      );
+    }else{
+      return (
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              Home Page
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              onClick={e => {
+                this.onClick("course");
+              }}
+              className="nav-link"
+              to="/sub/course"
+            >
+              Courses
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              onClick={e => {
+                this.onClick("consultant");
+              }}
+              className="nav-link active"
+              to="/sub/consultant"
+            >
+              Consultant
+            </Link>
+          </li>
+        </ul>
+      );
+    }
+    
+  }
+
+  render() {
         return (
           <div>
+            <div className="bg-danger" style={{ height: "50px" }}></div>
             <nav
               id="navbarnyasub"
               className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
             >
-              <Link className="navbar-brand text-white" to='/'>
+              <Link className="navbar-brand text-white" to="/">
                 NDT Solution
               </Link>
               <button
@@ -30,43 +108,21 @@ export class Sub extends Component {
                 id="navbarSupportedContent"
                 className="collapse navbar-collapse"
               >
-                <ul className="navbar-nav ml-auto">
-                  <li className="nav-item">
-                    <Link className="nav-link" to='/'>
-                      Home Page
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#course">
-                      Courses
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#consultant">
-                      Consultant
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="#contact">
+                {this.renderLink()}
+                {/* <li className="nav-item">
+                    <Link className="nav-link" to='/sub/contact'>
                       Contact
                     </Link>
-                  </li>
-                </ul>
+                  </li> */}
               </div>
             </nav>
-            {/* <div id="home">
-              <Home />
-            </div> */}
-            <div id="course">
-              <Course/>
+
+            <div className="footer fixed-bottom bg-dark text-white text-center">
+              <h6 className="my-3">
+                Any Question? Please Call 08129258446 Or Email Us
+                sarndtservice@gmail.com
+              </h6>
             </div>
-            <div id="consultant">
-              <Consultant/>
-            </div>
-            
-            <div style={{height:'120px'}}></div>
-            <div className='footer fixed-bottom bg-dark text-white text-center'>
-                <h6 className='my-3'>Any Question? Please Call 08129258446 Or Email Us sarndtservice@gmail.com</h6></div>
           </div>
         );
     }

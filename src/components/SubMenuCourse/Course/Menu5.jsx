@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import { Card, CardImg,  Row, Col } from 'reactstrap';
-import {lecture} from '../../data/index'
+import {lecture} from '../../../data/index'
 
 export class Menu5 extends Component {
    
