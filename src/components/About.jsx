@@ -18,13 +18,13 @@ export class About extends Component {
 
     render() {
         return (
-          <div className="container-fluid border-top border-bottom py-5">
+          <div className="container-fluid border-bottom border-top pb-5">
             
-            <h1 className="display-4 text-center">
+            <h1 className="display-4 text-center p-5">
               <strong>About Us</strong>
             </h1>
             <div className='container'>
-            <div className="row d-flex align-items-center py-5">
+            <div className="row d-flex align-items-center pb-5">
               <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <Card>
                   <CardBody>
@@ -50,7 +50,7 @@ export class About extends Component {
               </div> 
             </div>
             <div className="row px-3 px-sm-5 px-md-0">
-              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 p-3">
+              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
                   className="p-5"
                   style={{
@@ -67,7 +67,7 @@ export class About extends Component {
                   <p>NDT For Fabrication, Refinery, Power Plant, Pipe etc.</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 p-3">
+              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
                   className="p-5"
                   style={{
@@ -89,7 +89,7 @@ export class About extends Component {
                   </p>
                 </div>
               </div>
-              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 p-3">
+              <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
                   className="p-5"
                   style={{
