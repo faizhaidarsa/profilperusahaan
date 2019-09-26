@@ -24,9 +24,10 @@ export class About extends Component {
               <strong>About Us</strong>
             </h1>
             <div className='container'>
-            <div className="row d-flex align-items-center pb-5">
+            <div className='card p-5 mb-5'>
+            <div className="row">
               <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-                <Card>
+                <Card className='h-100'>
                   <CardBody>
                     <CardTitle className="h2 text-center">
                       Aim and Objective
@@ -45,21 +46,26 @@ export class About extends Component {
                   </CardBody>
                 </Card>
               </div>
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center pt-5 pt-md-0 px-5">
-                <img width='100%' height='100%' src="images\missiondsb.png" alt="" />
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6 pt-5 pt-md-0">
+                <Card className='h-100'>
+                  <CardBody>
+                  <img style={{objectFit:'contain'}} width='100%'  src="images\missiondsb.png" alt="" />
+                  </CardBody>
+                </Card>
               </div> 
+            </div>
             </div>
             <div className="row px-3 px-sm-5 px-md-0">
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
-                  className="p-5"
+                  className="p-3"
                   style={{
                     backgroundColor: "yellow",
                     border: "3px solid black",
                     borderRadius: "100%"
                   }}
                 >
-                  <img width="100%" height='100%' src="images\Experience.png" alt="" />
+                  <img className='rounded-circle' width="100%" height='100%' src="images\Experience.png" alt="" />
                 </div>
                 <div className="text-center">
                   <h5 className="font-weight-bold mt-3">Experiences</h5>
@@ -69,14 +75,14 @@ export class About extends Component {
               </div>
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
-                  className="p-5"
+                  className="p-3"
                   style={{
                     backgroundColor: "yellow",
                     border: "3px solid black",
                     borderRadius: "100%"
                   }}
                 >
-                  <img width="100%" height='100%' src="images\mission.png" alt="" />
+                  <img className='rounded-circle' width="100%" height='100%' src="images\mission.png" alt="" />
                 </div>
                 <div className="text-center">
                   <h5 className="font-weight-bold mt-3">Mission Statement</h5>
@@ -91,14 +97,14 @@ export class About extends Component {
               </div>
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
-                  className="p-5"
+                  className="p-3"
                   style={{
                     backgroundColor: "yellow",
                     border: "3px solid black",
                     borderRadius: "100%"
                   }}
                 >
-                  <img width="100%" src="images\corebeliefs.png" alt="" />
+                  <img className='rounded-circle' width="100%" src="images\corebeliefs.png" alt="" />
                 </div>
                 <div className="text-center">
                   <h5 className="font-weight-bold mt-3">Core Beliefs</h5>
