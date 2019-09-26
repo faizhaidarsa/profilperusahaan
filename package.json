@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/faizhaidarsa/Profil-Perusahaan.git",
+  "homepage": "http://faizhaidarsa.github.io.profilperusahaan",
   "name": "profil",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
