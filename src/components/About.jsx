@@ -24,8 +24,8 @@ export class About extends Component {
               <strong>About Us</strong>
             </h1>
             <div className='container'>
-            <div className='card p-5 mb-5'>
-            <div className="row">
+            
+            <div className="row mb-5">
               <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <Card className='h-100'>
                   <CardBody>
@@ -46,7 +46,7 @@ export class About extends Component {
                   </CardBody>
                 </Card>
               </div>
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6 pt-5 pt-md-0">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
                 <Card className='h-100'>
                   <CardBody>
                   <img style={{objectFit:'contain'}} width='100%'  src="images\missiondsb.png" alt="" />
@@ -54,7 +54,7 @@ export class About extends Component {
                 </Card>
               </div> 
             </div>
-            </div>
+            
             <div className="row px-3 px-sm-5 px-md-0">
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div

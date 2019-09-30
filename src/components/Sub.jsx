@@ -18,7 +18,7 @@ export class Sub extends Component {
       return (
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/#home">
               Home Page
             </Link>
           </li>
@@ -50,8 +50,8 @@ export class Sub extends Component {
       return (
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
-              Home Pagenya
+            <Link className="nav-link" to="/#home">
+              Home Page
             </Link>
           </li>
           <li className="nav-item">
