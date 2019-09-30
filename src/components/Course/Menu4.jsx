@@ -89,7 +89,7 @@ export class Menu4 extends Component {
                         <div className="col-12 col-sm-2">
                           <img
                             width="18px"
-                            src="..\images\sort.png"
+                            src="images\sort.png"
                             alt=""
                           />
                         </div>
@@ -101,7 +101,7 @@ export class Menu4 extends Component {
                         <div className="col-12 col-sm-2">
                           <img
                             width="18px"
-                            src="..\images\sort.png"
+                            src="images\sort.png"
                             alt=""
                           />
                         </div>
@@ -113,7 +113,7 @@ export class Menu4 extends Component {
                         <div className="col-12 col-sm-2">
                           <img
                             width="18px"
-                            src="..\images\sort.png"
+                            src="images\sort.png"
                             alt=""
                           />
                         </div>
