@@ -12,12 +12,12 @@ export class App extends Component {
   render() {
     return (
       <div>
-      <HashRouter>
+      <BrowserRouter>
         <Route exact path='/' component={Main}/>
         <Route path='/sub' component={Sub}/>
         <Route path='/sub/course' component={Course}/>
         <Route path='/sub/consultant' component={Consultant}/>       
-      </HashRouter>
+      </BrowserRouter>
       </div>
     )
   }
