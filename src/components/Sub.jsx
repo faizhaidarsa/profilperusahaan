@@ -9,6 +9,11 @@ export class Sub extends Component {
     active:'course'
   }
   
+  componentDidMount() {
+    this.setState({active:'course'})
+  }
+  
+
   onClick=(val)=>{
     this.setState({active:val})
   }
