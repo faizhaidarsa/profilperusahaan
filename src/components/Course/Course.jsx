@@ -54,7 +54,7 @@ export class Course extends Component {
                   <div className='row'>
                   <div className='col-12 col-sm-12 col-md-3'>
                     
-                        <Link onClick={()=>{this.clickMenu(1)}} className='nav-link p-0 py-2' to='#'>Courses & Inspection Training</Link>
+                        <Link onClick={()=>{this.clickMenu(1)}} className='nav-link p-0 py-2 active' to='#'>Courses & Inspection Training</Link>
                     
                         <Link onClick={()=>{this.clickMenu(2)}} className='nav-link p-0 py-2' to='#'>Training and Certification Methodology</Link>
                    
