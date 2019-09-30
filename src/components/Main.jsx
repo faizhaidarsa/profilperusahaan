@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from './Home'
-
+import {HashLink} from 'react-router-hash-link'
+import {Link} from 'react-router-dom'
 import About from './About'
 import Contact from './Contact'
 import Client from './Client'
@@ -14,9 +15,9 @@ export class Utama extends Component {
               id="navbarnya"
               className="navbar navbar-expand-sm navbar-dark fixed-top"
             >
-              <a className="navbar-brand text-white" href="#home">
+              <Link className="navbar-brand text-white" to="/">
                 NDT Solution
-              </a>
+              </Link>
               <button
                 className="navbar-toggler ml-auto"
                 type="button"
@@ -34,24 +35,16 @@ export class Utama extends Component {
               >
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <a className="nav-link" href="#home">
-                      Home
-                    </a>
+                    <HashLink className='nav-link' to='#home'> Home</HashLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#about">
-                      About
-                    </a>
+                  <HashLink className='nav-link' to='#about'> About</HashLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#client">
-                      Client
-                    </a>
+                  <HashLink className='nav-link' to='#client'> Client</HashLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#contact">
-                      Contact
-                    </a>
+                  <HashLink className='nav-link' to='#contact'> Contact</HashLink>
                   </li>
                 </ul>
               </div>
