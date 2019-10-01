@@ -13,9 +13,9 @@ export class Menu6 extends Component {
               <br />
               Buffet lunch, coffee/tea morning and afternoon of each day.
             </p>
-            <h4 className=" text-center mt-3">Acomodation</h4>
+            <h4 className=" text-center mt-3">Accomodation</h4>
             <p className="text-center">
-              Acomodation is not included in the course fee. However, our staff
+              Accomodation is not included in the course fee. However, our staff
               can arrange for any required accomodation at the time of booking.
             </p>
           </div>

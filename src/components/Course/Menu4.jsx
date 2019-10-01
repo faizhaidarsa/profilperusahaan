@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {schedule} from '../../data/index'
 
+const bulan = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember']
+
 export class Menu4 extends Component {
     
     state={
@@ -34,13 +36,14 @@ export class Menu4 extends Component {
         let sortedBySchedule=this.state.schedule
         this.setState({sortSchedule:this.state.sortSchedule*-1})
         sortedBySchedule.sort((a,b)=>{
-            if(a.schedule>b.schedule){
-                return 1*this.state.sortSchedule
-            }else if(a.schedule===b.schedule){
-                return 0*this.state.sortSchedule
-            }else{
-                return -1*this.state.sortSchedule
-            }
+            // if(a.schedule.getDate()>b.schedule.getDate()){
+            //     return 1*this.state.sortSchedule
+            // }else if(a.schedule===b.schedule){
+            //     return 0*this.state.sortSchedule
+            // }else{
+            //     return -1*this.state.sortSchedule
+            // }
+            return (a.schedule-b.schedule)*this.state.sortSchedule
         })
 
         this.setState({schedule:sortedBySchedule})
@@ -68,7 +71,7 @@ export class Menu4 extends Component {
                 <tr key={key}>
                     <td>{item.course}</td>
                     <td>Rp {this.numberWithCommas(item.price)}</td>
-                    <td>{item.schedule}</td>
+                    <td>{(item.schedule.getFullYear() == 9999) ? "TBD":bulan[item.schedule.getMonth()-1]+" "+item.schedule.getFullYear()}</td>
                 </tr>
             )
         })
