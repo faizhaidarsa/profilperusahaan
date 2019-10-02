@@ -86,7 +86,7 @@ export class Menu4 extends Component {
               <table className="table table-bordered w-100">
                 <thead className="bg-silver">
                   <tr>
-                    <th onClick={this.sortCourse}>
+                    <th className='judul' onClick={this.sortCourse}>
                       <div className="row no-gutters">
                         <div className="col-12 col-sm-10">Course</div>
                         <div className="col-12 col-sm-2">
@@ -98,7 +98,7 @@ export class Menu4 extends Component {
                         </div>
                       </div>
                     </th>
-                    <th onClick={this.sortPrice}>
+                    <th className='judul' onClick={this.sortPrice}>
                       <div className="row no-gutters">
                         <div className="col-12 col-sm-10">Price</div>
                         <div className="col-12 col-sm-2">
@@ -110,7 +110,7 @@ export class Menu4 extends Component {
                         </div>
                       </div>
                     </th>
-                    <th onClick={this.sortSchedule}>
+                    <th className='judul' onClick={this.sortSchedule}>
                       <div className="row no-gutters">
                         <div className="col-12 col-sm-10">Schedule</div>
                         <div className="col-12 col-sm-2">

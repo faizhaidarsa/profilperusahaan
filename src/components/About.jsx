@@ -58,9 +58,8 @@ export class About extends Component {
             <div className="row px-3 px-sm-5 px-md-0">
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
-                  className="p-3"
+                  className="p-3 bg-ku"
                   style={{
-                    backgroundColor: "yellow",
                     border: "3px solid black",
                     borderRadius: "100%"
                   }}
@@ -75,9 +74,8 @@ export class About extends Component {
               </div>
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
-                  className="p-3"
+                  className="p-3 bg-ku"
                   style={{
-                    backgroundColor: "yellow",
                     border: "3px solid black",
                     borderRadius: "100%"
                   }}
@@ -97,9 +95,8 @@ export class About extends Component {
               </div>
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
-                  className="p-3"
+                  className="p-3 bg-ku"
                   style={{
-                    backgroundColor: "yellow",
                     border: "3px solid black",
                     borderRadius: "100%"
                   }}
