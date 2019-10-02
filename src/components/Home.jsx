@@ -12,7 +12,7 @@ export class Home extends Component {
     
     render() {
         return (
-            <div id='homenya' className='container-fluid d-flex align-items-center justify-content-center' style={{backgroundImage:`url(images/bge.jpg)`,backgroundSize:'cover',backgroundPosition:'center',height:this.state.height}}>
+            <div id='homenya' className='container-fluid d-flex align-items-center justify-content-center' style={{backgroundImage:`url(images/home.png)`,backgroundSize:'cover',backgroundPosition:'center',height:this.state.height}}>
                 
                 <div className='row'>
                 <div className='col-12'><h1 className='text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1></div>
