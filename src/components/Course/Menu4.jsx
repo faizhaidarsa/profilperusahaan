@@ -71,7 +71,7 @@ export class Menu4 extends Component {
                 <tr key={key}>
                     <td>{item.course}</td>
                     <td>Rp {this.numberWithCommas(item.price)}</td>
-                    <td>{(item.schedule.getFullYear() == 9999) ? "TBD":bulan[item.schedule.getMonth()-1]+" "+item.schedule.getFullYear()}</td>
+                    <td>{(item.schedule.getFullYear() === 9999) ? "TBD":bulan[item.schedule.getMonth()-1]+" "+item.schedule.getFullYear()}</td>
                 </tr>
             )
         })
