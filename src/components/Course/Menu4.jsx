@@ -7,7 +7,7 @@ export class Menu4 extends Component {
     
     state={
         schedule:schedule,
-        sortCourse:1,
+        sortCourse:-1,
         sortPrice:1,
         sortSchedule:1
     }
