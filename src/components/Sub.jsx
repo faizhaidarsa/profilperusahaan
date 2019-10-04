@@ -95,6 +95,9 @@ export class Sub extends Component {
               id="navbarnyasub"
               className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
             >
+               <Link className="navbar-brand p-0" to="/">
+                <img width='50px' src="images/Logo.png" alt=""/>
+              </Link>
               <Link className="navbar-brand text-white" to="/">
                 NDT Solution
               </Link>
