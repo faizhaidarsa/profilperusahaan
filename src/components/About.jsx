@@ -46,7 +46,10 @@ export class About extends Component {
                   </CardBody>
                 </Card>
               </div>
-              <div className="col-12 mx-auto d-flex justify-content-center align-items-center">
+             
+            </div>
+            <div className="row my-5">
+            <div className="col-12 mx-auto d-flex justify-content-center align-items-center">
                 <Card className='h-100'>
                   <CardBody>
                   <img style={{objectFit:'contain'}} width='100%'  src="images\missiondsb.png" alt="" />
