@@ -55,7 +55,7 @@ export class About extends Component {
               </div> 
             </div>
             
-            <div className="row px-3 px-sm-5 px-md-0">
+            <div className="row pt-5 px-3 px-sm-5 px-md-5">
               <div className="col-12 col-sm-12 col-md-6 mx-auto col-lg-4 px-5">
                 <div
                   className="bg-ku"
