@@ -15,7 +15,7 @@ export class Client extends Component {
         return (
             <div className='container-fluid border-top border-bottom pb-5'>
            
-            <h1 className='display-4 text-center p-5'><strong>Our Client</strong></h1>
+            <h1 className='display-4 text-center py-5'><strong>Our Client</strong></h1>
                 <div className='container'>
                 <Row>
                     <Col className='p-4 d-flex align-items-center justify-content-center' xs='12' sm='6' md='4'><img width='70%' src="images/Client/GMF_AeroAsia_logo.svg.png" alt=""/></Col>

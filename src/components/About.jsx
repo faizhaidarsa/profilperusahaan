@@ -20,7 +20,7 @@ export class About extends Component {
         return (
           <div className="container-fluid border-bottom border-top pb-5">
             
-            <h1 className="display-4 text-center p-5">
+            <h1 className="display-4 text-center py-5">
               <strong>About Us</strong>
             </h1>
             <div className='container'>
