@@ -18,7 +18,7 @@ export class Home extends Component {
                 <div className='col-12'><h1 className='text-center text-white'><strong>Non-Destructive Testing (NDT)</strong></h1></div>
                 <div className='col-12'><h2 className='h-4 text-center text-white'>SERVICE AND TRAINING</h2></div>
                 
-                    <div className='col-6 mx-auto mt-5'>
+                    <div className='col-6 mx-auto mt-3 mt-md-5'>
                         <Link to='/sub/course' className='btn btn-success btn-block'>
                         Courses & Services
                         </Link>

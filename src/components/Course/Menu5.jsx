@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
-import { Card, CardImg,  Row, Col } from 'reactstrap';
+import { Card, CardImg,  Row, Col,CardBody } from 'reactstrap';
 import {lecture} from '../../data/index'
 
 export class Menu5 extends Component {
@@ -53,8 +53,12 @@ export class Menu5 extends Component {
     renderList=()=>{
         let hasil = this.state.lecture.map((item,key)=>{
             return(
-                <Col key={key} xs='12' sm='6' md='3' className='py-3 px-5 px-sm-3'><Card>
-                    <CardImg onClick={()=>{this.toggleModal(key)}} top width="100%" src={item.foto} alt="Card image cap" />
+                <Col key={key} xs='12' sm='6' md='3' className='py-3 px-5 px-sm-3'>
+                  <Card>
+                    <CardImg onClick={()=>{this.toggleModal(key)}} style={{objectFit:'cover'}} top width="100%" src={item.foto} alt="Card image cap" />
+                    <CardBody className='text-center'>
+                      {item.nama}
+                    </CardBody>
                     </Card>
                   </Col>
             )
