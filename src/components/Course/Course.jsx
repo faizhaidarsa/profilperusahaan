@@ -59,7 +59,8 @@ export class Course extends Component {
 
                       </li>
                       <li>
-                      <a className='disabled nav-link p-0 py-2' href="/#">Course Schedule & Price</a>
+                        <a href="#demo" className="nav-link p-0 py-2" data-toggle="collapse">Course Schedule & Price</a>
+                      <div id="demo" class="collapse">
                       <ul className='py-0' style={{listStyleType:'none'}}>
                         <li>
                         <a className='nav-link p-0 py-2' target="blank" href='file/COURSE_SCHEDULE_SNS_2020.pdf'>Schedule</a>
@@ -70,6 +71,9 @@ export class Course extends Component {
 
                         </li>
                       </ul>
+                      </div>
+                      
+                      
                       </li>
                       <li>
                       <Link onClick={()=>{this.clickMenu(5)}} className='nav-link p-0 py-2' to='#'>Instructor/Examiner</Link>
