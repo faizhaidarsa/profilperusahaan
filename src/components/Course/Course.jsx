@@ -53,20 +53,43 @@ export class Course extends Component {
                   <div className='container mt-5'>
                   <div className='row'>
                   <div className='col-12 col-sm-12 col-md-3'>
-                    
-                        <Link onClick={()=>{this.clickMenu(1)}} className='nav-link p-0 py-2 active' to='#'>Courses & Inspection Training</Link>
+                    <ul className='p-0' style={{listStyleType:'none'}}>
+                      <li>
+                      <Link onClick={()=>{this.clickMenu(1)}} className='nav-link p-0 py-2 active' to='#'>Courses & Inspection Training</Link>
+
+                      </li>
+                      <li>
+                      <a className='disabled nav-link p-0 py-2' href="/#">Course Schedule & Price</a>
+                      <ul className='py-0' style={{listStyleType:'none'}}>
+                        <li>
+                        <a className='nav-link p-0 py-2' target="blank" href='file/COURSE_SCHEDULE_SNS_2020.pdf'>Schedule</a>
+
+                        </li>
+                        <li>
+                        <a className='nav-link p-0 py-2' target="blank" href='file/COURSE_PRICE SNS_2020.pdf'>Price</a>
+
+                        </li>
+                      </ul>
+                      </li>
+                      <li>
+                      <Link onClick={()=>{this.clickMenu(5)}} className='nav-link p-0 py-2' to='#'>Instructor/Examiner</Link>
+
+                      </li>
+                      <li>
+                      <a className='nav-link p-0 py-2' target="blank" href='file/CERTIFICATE_HOLDER_OF_NDT LEVEL II _1NOP2019.pdf'>Certificate Holder</a>
+
+                      </li>
+                    </ul>
                     
                         {/* <Link onClick={()=>{this.clickMenu(2)}} className='nav-link p-0 py-2' to='#'>Training and Certification Methodology</Link>
                    
                         <Link onClick={()=>{this.clickMenu(3)}} className='nav-link p-0 py-2' to='#'>Course Outline</Link> */}
                     
                         {/* <Link onClick={()=>{this.clickMenu(this.state.menu)}} className='nav-link p-0 py-2' to='#'>Course Schedule & Price</Link> */}
-                        <a className='nav-link p-0 py-2' target="blank" href='file/Schedule&Price.pdf'>Course Schedule & Price</a>
                    
-                        <Link onClick={()=>{this.clickMenu(5)}} className='nav-link p-0 py-2' to='#'>Instructor/Examiner</Link>
                 
-                        <Link onClick={()=>{this.clickMenu(6)}} className='nav-link p-0 py-2' to='#'>Certificate Holder</Link>
-                  
+                        {/* <Link onClick={()=>{this.clickMenu(6)}} className='nav-link p-0 py-2' to='#'>Certificate Holder</Link> */}
+
                     </div>
                     <div className='col-12 col-md-9 mt-3 mt-md-0'>
                       <div className='card p-4'>
