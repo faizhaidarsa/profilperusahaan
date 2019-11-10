@@ -12,12 +12,6 @@ export const lecture=[
         foto:'images/Instructor/BaskanHanuradji.png',
         role:'Senior Instructor/Examiner'
     },{
-        id:3,
-        nama:'Drs. Suparno',
-        deskripsi:'a NDT lecturer and instructor in Center for Education and Training - National Nuclear Energy Agency who has performed extensive application work in the oil and gas company with the intention of harmonization between classroom and operations field. He is certified as NDT-Level III. He has been trained as IAEA fellows to various industrial sectors in Korea especially in digital radiography. He has responsible for the professional training programs in the fields of Radiography such as interpreter, radiography in pipeline, pressure vessel, etc Finally, he has several published articles and research papers and some technical classroom for NDT education.',
-        foto:'images/info-logo.jpg',
-        role:'Role'
-    },{
         id:4,
         nama:'Putra Darma, BE',
         deskripsi:'a NDT researcher in National Nuclear Energy Agency who has performed extensive application work in the oil and Gas Company, aircraft, petrochemical, fabrication. He is certified as NDT-Level III and Welding Inspector. He has been involved in training to various industrial sectors in Italy. He has been assistance for the professional training programs in the fields of Radiographer interpreter, penetrant testing also others NDT, quality management system (ISO-9001, OHSAS-18001, ISO-17020), plan maintenance, etc',
@@ -42,6 +36,13 @@ export const lecture=[
         foto:'images/Instructor/Ibrahim.png',
         role:'Instructor'
     }
+    // {
+    //     id:3,
+    //     nama:'Drs. Suparno',
+    //     deskripsi:'a NDT lecturer and instructor in Center for Education and Training - National Nuclear Energy Agency who has performed extensive application work in the oil and gas company with the intention of harmonization between classroom and operations field. He is certified as NDT-Level III. He has been trained as IAEA fellows to various industrial sectors in Korea especially in digital radiography. He has responsible for the professional training programs in the fields of Radiography such as interpreter, radiography in pipeline, pressure vessel, etc Finally, he has several published articles and research papers and some technical classroom for NDT education.',
+    //     foto:'images/info-logo.jpg',
+    //     role:'Role'
+    // },
 ]
 
 export const schedule=[
