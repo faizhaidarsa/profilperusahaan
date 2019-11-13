@@ -28,7 +28,8 @@ export class Course extends Component {
           <div className="container-fluid pb-5">
            <div className='row'>
                 
-                  <div className='col-12 bg-dark' style={{backgroundImage:`url(images/courseandconsultantbg.png)`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                  <div className='col-12 bg-dark' style={{backgroundImage:`url(/images/courseandconsultantbg.png)`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                    <img src="" alt=""/>
                   <h1 className='display-4 text-center py-5'><strong>Consultant</strong></h1>
                   </div>
                 </div>

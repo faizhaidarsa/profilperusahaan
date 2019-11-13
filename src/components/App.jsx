@@ -2,7 +2,9 @@ import React from 'react';
 import {
   // BrowserRouter, 
   Route, 
-  HashRouter} from 'react-router-dom'
+  BrowserRouter,
+  HashRouter
+} from 'react-router-dom'
 import Main from './Main'
 import Sub from './Sub'
 import Course from './Course/Course'
@@ -15,12 +17,12 @@ export class App extends Component {
   render() {
     return (
       <div>
-      <HashRouter>
+      <BrowserRouter>
         <Route exact path='/' component={Main}/>
         <Route path='/sub' component={Sub}/>
         <Route path='/sub/course' component={Course}/>
         <Route path='/sub/consultant' component={Consultant}/>       
-      </HashRouter>
+      </BrowserRouter>
       </div>
     )
   }

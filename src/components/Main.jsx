@@ -38,7 +38,7 @@ export class Utama extends Component {
               >
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <HashLink className='nav-link' to='#home'> Home</HashLink>
+                  <HashLink className='nav-link' to='#home'> Home</HashLink>
                   </li>
                   <li className="nav-item">
                   <HashLink className='nav-link' to='#about'> About</HashLink>
