@@ -11,15 +11,7 @@ export const lecture=[
         deskripsi:'a NDT researcher in National Nuclear Energy Agency who has performed extensive application work in the oil and gas, aircraft maintenance in order to synchronization between laboratory and operations field. He has been as a visiting scientist at Japan Atomic Energy Agency in Ibaraki for Infrared thermography research and studied ultrasonic testing at Yokohama National University. He is certified as NDT-Level III. He has been involved in submitting NDCM conference in Berlin, Germany and JSNDI conference in Tokyo, Japan. He also trained to various industrial sectors in Japan and Korea. He has responsible for the professional training programs in the fields of Radiographer interpreter, others NDT, quality management system ISO-17024, 17025, plan maintenance, etc. Finally, he has several published articles and research papers and he also as National Examiner for Radiographer level 1 and 2.',
         foto:'/images/Instructor/BaskanHanuradji.png',
         role:'Senior Instructor/Examiner'
-    },
-    // {
-    //     id:3,
-    //     nama:'Drs. Suparno',
-    //     deskripsi:'a NDT lecturer and instructor in Center for Education and Training - National Nuclear Energy Agency who has performed extensive application work in the oil and gas company with the intention of harmonization between classroom and operations field. He is certified as NDT-Level III. He has been trained as IAEA fellows to various industrial sectors in Korea especially in digital radiography. He has responsible for the professional training programs in the fields of Radiography such as interpreter, radiography in pipeline, pressure vessel, etc Finally, he has several published articles and research papers and some technical classroom for NDT education.',
-    //     foto:'/images/info-logo.jpg',
-    //     role:'Role'
-    // },
-    {
+    },{
         id:4,
         nama:'Putra Darma, BE',
         deskripsi:'a NDT researcher in National Nuclear Energy Agency who has performed extensive application work in the oil and Gas Company, aircraft, petrochemical, fabrication. He is certified as NDT-Level III and Welding Inspector. He has been involved in training to various industrial sectors in Italy. He has been assistance for the professional training programs in the fields of Radiographer interpreter, penetrant testing also others NDT, quality management system (ISO-9001, OHSAS-18001, ISO-17020), plan maintenance, etc',
@@ -44,6 +36,13 @@ export const lecture=[
         foto:'/images/Instructor/Ibrahim.png',
         role:'Instructor'
     }
+    // {
+    //     id:3,
+    //     nama:'Drs. Suparno',
+    //     deskripsi:'a NDT lecturer and instructor in Center for Education and Training - National Nuclear Energy Agency who has performed extensive application work in the oil and gas company with the intention of harmonization between classroom and operations field. He is certified as NDT-Level III. He has been trained as IAEA fellows to various industrial sectors in Korea especially in digital radiography. He has responsible for the professional training programs in the fields of Radiography such as interpreter, radiography in pipeline, pressure vessel, etc Finally, he has several published articles and research papers and some technical classroom for NDT education.',
+    //     foto:'images/info-logo.jpg',
+    //     role:'Role'
+    // },
 ]
 
 export const schedule=[
