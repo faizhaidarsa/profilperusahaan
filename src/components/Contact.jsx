@@ -20,10 +20,11 @@ export class Contact extends Component {
             </div>
             <div className='row'>
                 
-                <div className='col-12 col-md-6'>
-                <div id="map" className='rounded-lg' style={{height:this.state.height*0.5,width:'100%'}}></div>
+                <div className='col-12 col-md-6 p-md-5 d-flex justify-content-center align-items-center'>
+                {/* <div id="map" className='rounded-lg' style={{height:this.state.height*0.5,width:'100%'}}></div> */}
+                <img src="images/Logo.png" style={{maxWidth:"300px",objectFit:'contain'}} alt=""/>
                 </div>
-                <div className='col-12 col-md-6 d-flex align-items-center'>
+                <div className='col-12 col-md-6 d-flex align-items-center justify-content-center'>
                     
                     <div className='mt-2 mt-sm-2 mt-md-0'>
                         <div className='row d-flex align-items-center'>
@@ -36,7 +37,7 @@ export class Contact extends Component {
                         </div>
                         <div className='row d-flex align-items-center'>
                             <div className='col-2'><img width='40px' src="images/pin.png" className='mr-1 mr-sm-2 mt-2 mt-md-0' alt=""/></div>
-                            <div className='col-10'><a className="nav-link p-0" target="blank" href="https://goo.gl/maps/F7KieECDdaswYLKEA"><h5 className=''>Jl. Raya Serpong Puri Sentosa Blok H No.1<br/>Tangerang Selatan - Banten</h5></a></div>
+                            <div className='col-10'><a className="nav-link p-0 dark-link" target="blank" href="https://goo.gl/maps/F7KieECDdaswYLKEA"><h5 className=''>Jl. Raya Serpong Puri Sentosa Blok H No.1<br/>Tangerang Selatan - Banten</h5></a></div>
                         </div>
                     </div>
                 

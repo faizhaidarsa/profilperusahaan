@@ -49,7 +49,7 @@ export class About extends Component {
               <div className="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 mt-md-0">
                 <Card className='h-100'>
                   <CardBody className="d-flex align-items-center justify-content-center">
-                  <img style={{objectFit:'contain'}} width='300px'  src="images\missiondsb.png" alt="" />
+                  <img style={{objectFit:'contain',maxWidth:'300px'}}  src="images\missiondsb.png" alt="" />
                   </CardBody>
                 </Card>
               </div> 
